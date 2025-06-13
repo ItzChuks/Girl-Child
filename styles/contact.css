@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F5F5F599;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: white;
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  z-index: 1000;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bolder;
+  background: linear-gradient(to right, #FF32FC, #AC3785);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  user-select: none;
+  color: #BB39D8;
+}
+
+.nav-links {
+  display: flex;
+  gap: 3rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #42414180;
+  font-weight: bolder;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-active{
+  color: black;
+}
+
+.nav-btn-text {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.nav-btn-text h1 {
+  font-size: 1.1rem;
+}
+
+.donate-button {
+  background-color: #BB39D8;
+  color: white;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: bolder;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.donate-button:hover {
+  background-color: #AC3785;
+  transform: scale(1.05);
+}
+
+header{
+  text-align: center;
+  padding-top: 6rem;
+  background-color: white;
+  padding-bottom: 3rem;
+}
+
+.header-h2{
+  font-size: 2.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 1rem;
+}
+
+.header-p{
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+.contact-section {
+  text-align: center;
+  padding: 7rem 3rem 3rem;
+  background-color: #fff;
+}
+
+.contact-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.contact-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.contact-section {
+  display: flex;
+  gap: 3rem;
+  background: #f9f9f9;
+  padding: 2.5rem 2vw;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1 1 260px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.contact-img {
+  width: 100%;
+  max-width: 260px;
+  margin-bottom: 1rem;
+  border-radius: 0.7rem;
+  background: #eee;
+}
+
+.contact-details {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.7rem 0;
+  font-size: 1rem;
+  color: #222;
+}
+
+.contact-details li {
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.contact-details i {
+  color: #bb39d8;
+  font-size: 1.1rem;
+  min-width: 1.2em;
+}
+
+.contact-social-label {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact-socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.contact-socials a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e6b6f7;
+  color: #bb39d8;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+  text-decoration: none;
+}
+
+.contact-socials a:hover {
+  background: #bb39d8;
+  color: #fff;
+}
+
+.contact-form {
+  flex: 2 1 350px;
+  max-width: 600px;
+  background: transparent;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 0.2rem;
+}
+
+.contact-form p {
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 1.2rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form-group label {
+  font-size: 0.98rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #222;
+  border-radius: 6px;
+  font-size: 1rem;
+  background: #fff;
+  resize: none;
+}
+
+.form-group textarea {
+  min-height: 90px;
+  max-width: 100%;
+}
+
+.contact-btn {
+  margin-top: 1rem;
+  background: #bb39d8;
+  color: #fff;
+  border: none;
+  padding: 0.9rem 0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  width: 220px;
+  align-self: flex-start;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.contact-btn:hover {
+  background: #ac3785;
+  transform: translateY(-2px) scale(1.03);
+}
+
+
+.section-two{
+  width: 100%;
+  height: 8rem;
+  background-color: white;
+}
+/* Footer Styles */
+/* Base Footer Styles */
+    .footer {
+      background-color: #f9f9f9;
+      padding: 3rem 2rem 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+
+    .footer-left {
+      max-width: 400px;
+    }
+
+    .footer-left h2 {
+      font-size: 1.8rem;
+      font-weight: bolder;
+      background: linear-gradient(to right, #FF32FC, #AC3785);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+        margin-bottom: 1rem;
+    }
+
+    .footer-left p {
+      color: #333;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .footer-left .social-label {
+      font-weight: 500;
+      margin-bottom: 0.5rem;
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .social-icons i {
+      background-color: #BB39D8;
+      color: white;
+      border-radius: 50%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .footer-right {
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+    }
+
+    .footer-right a {
+      color: gray;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .footer-right a:hover,
+    .footer-right a.active {
+      color: black;
+    }
+
+    .footer-bottom {
+      background-color: #f1f1f5;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #222;
+    }
+
+    .footer-bottom i {
+      margin-right: 0.4rem;
+    }
+
+    
